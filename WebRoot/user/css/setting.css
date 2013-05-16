@@ -1,0 +1,80 @@
+﻿/*==================================== 
+	 学互网-学习社区
+	 作者：lbz 
+	 日期：2013-1 
+ ====================================*/
+
+/*==================================== 
+	选项卡
+ ====================================*/
+.setting_nav{
+	 height:22px; border-bottom:1px solid #ddd;margin:auto; margin-top:20px;
+	 width:770px; margin-bottom:10px;
+}
+.setting_nav li{
+	width:70px; height:22px; float:left; text-align:center; line-height:22px;
+	 font-size:13px; cursor:pointer; color:#555;
+}
+.setting_li_curr{
+	border-bottom:2px solid #1caede; 
+}
+
+
+.setting_tab{
+	 width:690px; margin-left:50px; font-size:14px; color:#666; margin-top:30px;
+}
+.setting_tab td{
+	height:35px; 
+}
+#margin_td{
+	height:10px;
+}
+.setting_tab th{
+	height:25px; font-weight:normal; text-align:left; border-bottom:1px solid #ddd;
+	padding-left:10px; line-height:25px; border-left:2px solid #1caede; 
+}
+.setting_tab tr{
+	border:1px solid #ddd; 
+}
+.setting_input_text,.setting_tab select,.setting_input_password{
+	 background:url(../image/input_bg.gif) repeat-x #fff; border:1px solid #ddd;
+	 color:#555; font-size:13px;
+}
+.setting_input_text{
+	width:350px; height:25px; padding-left:5px;
+}
+.setting_input_password{
+	width:200px;height:25px; padding-left:5px;
+}
+
+.setting_tab select{
+	padding:5px;
+}
+
+.legalize_span{
+	font-size:12px; margin-left:10px; border:1px solid #ff6600; background-color:#ffdd00; padding:2px;
+	color:#ff4400;
+}
+.setting_tab label{
+	font-size:13px; margin:0px 5px;
+}
+
+
+.setting_save_btn,.setting_password_btn{
+	cursor: pointer; width:120px; height: 30px; background:url(../image/back-btn-bg.gif) repeat-x; 
+	float: left; line-height: 30px; text-align: center; font-size: 13px; color: #fff;
+	border: 1px solid #1caed0; margin-top: 40px; margin-left: 350px; opacity: 0.8;
+	border-radius:2px;
+}
+.setting_save_btn:hover,.setting_password_btn:hover{
+	opacity:1;
+}
+.setting_password_btn{
+	width:80px;
+}
+
+
+
+.password_tip,.password_repeat_tip,.password_new_tip{
+	font-size:13px; margin-left:10px; font-weight:bold; color:#1caede;
+}

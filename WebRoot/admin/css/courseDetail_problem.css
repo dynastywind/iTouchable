@@ -1,0 +1,90 @@
+/*==================================== 
+	 学互网-学习社区
+	 作者：lbz 
+ 	日期：2013-1 
+ ====================================*/
+
+/*==================================== 
+ 	公共部分
+ ====================================*/
+
+
+
+
+
+.common_dialog_point_box{
+	width:520px; float:left; margin-left:-8px; 
+}
+.common_dialog_point_box li{
+	border:1px solid #ddd; background-color:#f8f8f8; float:left;
+	color:#666; font-size:12px; line-height:18px; height:20px;
+	margin-left:8px; margin-top:5px;
+}
+.point_close{
+	font-size:13px; cursor:pointer; font-weight:bold; background-color:#eee; color:#999;
+	margin-left:4px; height:19px; float:right; border-top:1px solid #f8f8f8; border-left:1px solid #ddd;
+}
+.point_close:hover{
+	color:#222; 
+}
+.point_weight{
+	border-right:1px solid #ddd; float:left; padding:0px 4px; background-color:#f2f2f2;
+	height:19px; margin-top:1px; margin-right:4px; color:#1caede;
+	text-decoration:none;
+}
+
+
+
+
+.problem_min_box{
+	width:180px; height:300px; margin-top:-301px; border:1px solid #ddd; background-color:#fff;
+	float:right; border-right:0px; border-bottom:0px; display:none;
+}
+#problem_knowledge_ul,#problem_setweight_ul{
+	overflow:auto; overflow-x:hidden; width:100%; height:270px; 
+	float:right;
+}
+#problem_knowledge_ul li,#problem_setweight_ul li{
+	height:25px; line-height:25px; padding-left:10px; cursor:pointer;
+	list-style:decimal;
+}
+#problem_knowledge_ul li:hover,#problem_setweight_ul li:hover{
+	background-color:#f4f4f4;
+}
+
+.problem_min_title{
+	background:url(../../image/dh_bg.png) repeat-x; height:30px;
+	float:left; width:100%;
+}
+.problem_min_title_left{
+	line-height:30px; float:left; margin-left:5px; font-weight:bold;
+}
+.problem_min_close{
+	float:right; width:18px; height:18px; font-size:14px; cursor:pointer; border:1px solid #ddd;
+	background-color:#f4f4f4; margin-right:5px; margin-top:5px; text-align:center;
+	line-height:18px; color:#999; font-weight:bold;
+}
+.problem_min_close:hover{
+	background-color:#f0f0f0; color:#666;
+}
+
+.common_dialog_point_add_open{
+	margin-left:10px; color:#1caede; float:left;
+}
+.common_dialog_point_set{
+	color:#1caede; float:left; clear:left;
+}
+.common_dialog_point_add_open:hover,.common_dialog_point_set:hover{
+	color:#ff6600;
+}
+
+.setweight_input{
+	float:right; margin-right:10px; margin-top:3px;
+}
+#problem_setweight_ul li{
+	height:30px; border-bottom:1px solid #eee; line-height:30px;
+}
+.set_weight_rest{
+	float:right; margin-right:30px;
+}
+

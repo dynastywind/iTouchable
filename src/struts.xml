@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.i18n.encoding" value="UTF-8" />
+    <constant name="struts.objectFactory" value="spring" />
+    <constant name="struts.ui.theme" value="simple" />
+    <constant name="struts.devMode" value="true" />
+
+	<package name="base" extends="struts-default" namespace="/">
+ 		<!-- 设置拦截器 -->
+ 		<interceptors>
+ 			<interceptor name="userLoginInterceptor" class="com.ecust.interceptor.LoginInterceptor"/>
+ 		<!-- 设置拦截器栈 -->
+ 			<interceptor-stack name="baseInterceptor">
+ 				<interceptor-ref name="defaultStack"></interceptor-ref>
+ 				<interceptor-ref name="userLoginInterceptor"></interceptor-ref>
+ 			</interceptor-stack>
+ 		</interceptors>
+
+		<!--设置 默认拦截器 -->
+		<default-interceptor-ref name="baseInterceptor" />
+		<!--设置 拦截结果 -->
+		<global-results>
+			<result name="login" type="redirect">/</result>
+		</global-results>
+	</package>
+ 	
+ 	
+</struts>

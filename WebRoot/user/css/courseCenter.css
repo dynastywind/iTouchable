@@ -1,0 +1,29 @@
+﻿/*==================================== 
+	 学互网-学习社区
+	 作者：lbz 
+	 日期：2013-1 
+ ====================================*/
+
+/*==================================== 
+	选项卡
+ ====================================*/
+.course_nav{
+	 height:22px; border-bottom:1px solid #ddd;margin:auto; margin-top:20px;
+	 width:770px; margin-bottom:10px;
+}
+.course_nav li{
+	width:70px; height:22px; float:left; text-align:center; line-height:22px;
+	 font-size:13px; cursor:pointer; color:#555;
+}
+.course_li_curr{
+	border-bottom:2px solid #1caede; 
+}
+
+
+
+/*==================================== 
+	course
+ ====================================*/
+
+
+

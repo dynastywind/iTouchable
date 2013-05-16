@@ -1,0 +1,160 @@
+﻿/*==================================== 
+	 学互网-学习社区
+	 作者：lbz 
+	 日期：2013-1 
+ ====================================*/
+
+/*==================================== 
+	选项卡
+ ====================================*/
+.society_add_nav{
+	 height:22px; border-bottom:1px solid #ddd;margin:auto; margin-top:20px;
+	 width:770px; margin-bottom:10px;
+}
+.society_add_nav li{
+	width:70px; height:22px; float:left; text-align:center; line-height:22px;
+	 font-size:13px; cursor:pointer; color:#555;
+}
+.society_add_li_curr{
+	border-bottom:2px solid #1caede; 
+}
+
+
+
+/*==================================== 
+	society
+ ====================================*/
+.society{
+	
+}
+.society_1{
+	float:left; width:100%; display:none; 
+}
+
+.society_search_box{
+	width:520px; float:left; position:relative; left:50%; margin-left:-260px;
+	margin-bottom:30px; margin-top:50px;
+}
+#keyword_society{
+	width:250px;  height:28px; margin-left:75px; line-height:28px; padding-left:5px; float:left; border:1px solid #ddd; 
+	background:url(../image/input_bg.gif) repeat-x #fff;color:#aaa;
+}
+.society_search_btn,.society_add_btn{
+	width:100px; height:30px; line-height:30px; background:url(../image/back-btn-bg.gif) repeat-x; cursor:pointer;
+	text-align:center; color:#f8f8f8; float:left; border:1px solid #1caed0; margin-left:5px;
+}
+
+
+
+.society_2{
+	float:left; position:relative; left:50%; margin-left:-300px; width:600px;
+	margin-top:50px;
+}
+.society_2>div{
+	margin:10px 0px; float:left; width:100%; line-height:25px;
+}
+.society_add_btn{
+	position:relative; width:120px; left:50%; margin-left:-60px;
+}
+
+.society_form_left{
+	float:left; width:90px;font-size:14px;
+}
+.society_form_right{
+	float:right; width:510px;
+}
+#society_info,#society_name,#society_type,.society_friends_name_selected,#society_teacher,#society_course{
+	background:url(../image/input_bg.gif) repeat-x #fff; border:1px solid #ddd;
+}
+#society_type{
+	width:100px; padding:4px;
+}
+#society_teacher,#society_course{
+	padding:4px;
+}
+#society_info{
+	width:480px; height:50px; padding:5px;
+}
+#society_name{
+	height:25px; width:480px; padding:0px 5px;
+}
+
+
+.society_friends_selected_box{
+	
+}
+.society_friends_selected_box ul{
+	 width:490px; float:left; border:1px solid #ddd; height:100px; 
+	 overflow:auto; overflow-x:hidden;
+	 
+}
+
+.society_friends_name_selected li{
+	border:1px solid #ddd; background-color:#f8f8f8; float:left;
+	color:#666; font-size:12px; line-height:18px; height:20px; padding-left:4px;
+	margin-left:5px; margin-top:5px;
+}
+.society_friends_name_selected li span{
+	font-size:13px; cursor:pointer; font-weight:bold; background-color:#eee;
+	margin-left:4px; height:19px; float:right; border-top:1px solid #f8f8f8; border-left:1px solid #ddd;
+}
+.society_friends_name_selected li span:hover{
+	color:#222;
+}
+.society_friends_funciton{
+	width:100%; float:left; color:#999;
+}
+.society_friends_remove_all_btn{
+	color:#1caed0;
+}
+.society_friends_remove_all_btn:hover{
+	color:#999;
+}
+.society_friends_add_btn{
+	color:#ff6600; margin-left:10px;
+}
+.society_friends_add_btn:hover{
+	color:#1caed0;
+}
+
+.society_friends_box{
+	 width:150px; border:1px solid #ddd; float:left; display:none;
+}
+.society_friends_close{
+	float:right; font-size:14px; font-weight:bold; color:#999; cursor:pointer; margin-right:5px;
+}
+.society_friends_close:hover{
+	color:#333;
+}
+.society_friends_title{
+	background-color:#f2f2f2; border-top:1px solid #eee; border-bottom:1px solid #eee;
+	padding-left:5px; color:#999; font-weight:bold;
+	
+}
+.society_friends_group_title{
+	background-color:#f4f4f4; cursor:pointer; border-top:1px solid #eee; border-bottom:1px solid #eee;
+	padding-left:10px; color:#666; width:140px; float:left;
+}
+.society_friends_group_title span{
+	float:left; width:92px;
+}
+.society_friends_group_check{
+	float:right; margin-right:30px; margin-top:6px;
+}
+
+
+.society_friends_ul{
+	padding-left:10px; height:100px; overflow:auto; overflow-x:hidden;
+}
+.society_friends_ul li{
+	width:105px; padding-left:10px; line-height:25px; height:25px;
+}
+.society_friends_check{
+	float:right; margin-right:10px; margin-top:6px;
+}
+.society_friends_selected{
+	background-color:#1caede;
+}
+
+
+

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2012-10-15 20:16:30 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.ecust.model.study">
+    <class name="Test" table="test">
+        <id name="id" type="java.lang.String">
+            <column name="test_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="courseNo" type="java.lang.String">
+            <column name="course_no" />
+        </property>
+        <property name="testAddress" type="java.lang.String">
+            <column name="test_address" />
+        </property>
+        <property name="time">
+        	<column name="test_time" />
+        </property>
+        <property name="averageScore" type="float">
+        	<column name="average_score" />
+        </property>
+        <property name="doneTimes" type="int">
+        	<column name="done_times" />
+        </property>
+    </class>
+</hibernate-mapping>

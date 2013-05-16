@@ -1,0 +1,220 @@
+/*==================================== 
+	 学互网-学习社区
+	 作者：lbz 
+	 日期：2013-1 
+ ====================================*/
+
+/*==================================== 
+  	主体框架
+ ====================================*/
+.friends_div{ width:770px; margin:auto; margin-top:40px;
+}
+.friends_left_div{ width:530px; float:left;  height:1000px; margin-left:10px;
+}
+.friends_right_div{ width:230px; float:right; height:1000px;
+}
+
+/*==================================== 
+	选项卡
+ ====================================*/
+.friends-nav{
+	 height:22px; border-bottom:1px solid #ddd;margin:auto; margin-top:20px;
+	 width:770px; 
+}
+.friends-nav li{
+	width:70px; height:22px; float:left; text-align:center; line-height:22px;
+	 font-size:13px; cursor:pointer; color:#555;
+}
+.friends-nav-li-curr{
+	border-bottom:2px solid #1caede; 
+}
+
+
+
+
+
+/*==================================== 
+	好友列表
+ ====================================*/
+ 
+.friends-find-box{
+	width:520px; float:left; position:relative; left:50%; margin-left:-260px;
+	margin-bottom:30px; font-size:13px;
+}
+.friend-find-btn{
+	width:100px; height:30px; line-height:30px; background:url(../image/back-btn-bg.gif) repeat-x; cursor:pointer;
+	text-align:center; color:#f8f8f8; float:left; border:1px solid #1caed0; margin-left:5px;
+}
+#keyword_find{
+	width:250px; margin-left:75px;
+}
+ 
+ 
+.freinds_list_div{ float:right; border:1px solid #dfdfdf; width:520px;
+}
+.left_title_div{ padding-left:10px; height:40px; background-color:#f8f8f8; font-size:14px; color:#777; line-height:40px; font-weight:bold; border-bottom:1px solid #ddd;
+}
+.freinds_page_div{ float:right; font-weight:normal; font-size:13px; margin-right:10px; color:#999;
+}
+.page_a,.find_page_a{ color:#999; text-decoration:none;
+}
+.page_a:hover,.find_page_a:hover{ text-decoration:underline;
+}
+.page_curr_a{ text-decoration:underline; color:#ff6600;
+}
+.freinds_list_div ul li{ padding:10px; border-bottom:1px solid #ddd; height:50px; background-color:#f5f5f5; border-top:1px solid #fefefe; border-right:1px solid #fefefe;
+}
+.freinds_list_div ul li:hover{ background-color:#fafafa;
+}
+.freinds_list_img{ float:left; border:1px solid #fafafa;
+}
+.freinds_list_tab{ font-size:13px; color:#666; z-index:50; padding-left:15px;
+}
+.friends-tab-1{
+	float:right; width:440px;  height:30px; line-height:30px;
+}
+.friends-tab-2{
+	float:right;
+}
+.freinds_name_spn{ color:#1caed0;
+}
+.freids_list_a{ color:#999; text-decoration:none; font-size:12px; float:right; margin-right:10px;
+}
+.freids_list_a:hover{ color:#ff8800; text-decoration:underline;
+}
+.freinds_list_bottom_div{ height:32px; background-color:#f8f8f8; border-top:1px solid #fefefe; padding-top:18px;
+}
+
+/*==================================== 
+	移动好友
+ ====================================*/
+.freinds_move_div{ width:90px; margin-right:-120px; position:relative;
+border:1px solid #ddd; background-color:#f8f8f8; margin-top:25px;
+display:none; z-index:100; border-bottom:0px; float:right; text-align:left;
+}
+.freinds_move_div a{ width:80px; height:25px; font-size:13px; float:left;
+color:#999; text-decoration:none; float:left; line-height:25px;
+padding-left:10px; border-top:1px solid #fefefe; border-bottom:1px solid #ddd;
+}
+.freinds_move_div a:hover{ background-color:#f0f0f0;
+}
+
+/*==================================== 
+	分组列表
+ ====================================*/
+.right_title_div{ font-size:13px; color:#777; font-weight:bold; height:40px; line-height:40px;
+border-bottom:1px solid #e4e4e4; padding-left:15px; background-color:#f8f8f8;
+}
+.group_add_img{ font-size:13px; color:#bbb; font-weight: bolder; font-family:Arial, Helvetica, sans-serif; text-decoration:none; width:18px;  height:18px; display:block; float:right; margin-right:10px; margin-top:4px; cursor:pointer; opacity:0.7;
+}
+.group_add_img:hover{ opacity:1;
+}
+.add-group-btn{
+	font-weight:normal; color:#888; margin-left:80px; text-decoration:none;
+}
+.add-group-btn:hover{
+	color:#444; 
+}
+.group_edit_ico{ color:#666; float:left; z-index:99; position:relative; margin-top:-25px; margin-left:170px; cursor:pointer;
+}
+.group_edit_ico:hover{  color:#444;
+}
+.edit_div{ width:70px; float:right; position:relative; border:1px solid #ddd; background-color:#f8f8f8; margin-top:-12px; display:none; z-index:100; border-bottom:0px;
+}
+.edit_div a{ width:60px; height:25px; font-size:13px; color:#999; text-decoration:none; float:left; line-height:25px; padding-left:10px; border-top:1px solid #fefefe; border-bottom:1px solid #ddd;
+}
+.edit_div a:hover{ background-color:#f0f0f0;
+}
+.comtact_div{ font-size:13px; color:#999; width:200px;
+margin-left:10px; border:1px solid #ddd;
+}
+.comtact_div ul li{ height:40px; border-bottom:1px solid #e4e4e4; border-top:1px solid #f8f8f8;
+padding-left:20px; line-height:40px; cursor:pointer; background-color:#f0f0f0;  width:180px; color:#888; font-size:14px;
+}
+.comtact_div ul li:hover{ background-color:#f6f6f6;
+}
+.comtact_bottom_div{ height:40px; background-color:#f8f8f8;
+}
+.comtact_curr_li{ background-color:#fff; 
+}
+
+
+/*==================================== 
+	寻找好友
+ ====================================*/
+
+.friends-2{
+	display:none;
+}
+
+.friends-soso-box{
+	width:520px; float:left; margin-top:40px; position:relative; left:50%; margin-left:-260px;
+	 font-size:13px;
+}
+.input-text{
+	width:400px; height:28px; line-height:28px; padding-left:5px; float:left; border:1px solid #ddd; 
+	background:url(../image/input_bg.gif) repeat-x #fff;color:#aaa;
+}
+.friend-soso-btn{
+	width:100px; height:30px; line-height:30px; background:url(../image/back-btn-bg.gif) repeat-x; cursor:pointer;
+	text-align:center; color:#f8f8f8; float:left; border:1px solid #1caed0; margin-left:5px;
+}
+
+.friends-result-box{
+	width:100%; margin-top:40px; float:left; display:none; font-size:13px;
+}
+.friends-result-list-box{
+	width:700px; margin:auto; margin-top:20px; height:500px;
+}
+.friends-result-list{
+	width:680px; float:left; padding:10px; border-bottom:1px solid #eee;
+}
+.friends-result-list:hover{
+	background-color:#f8f8f8;
+}
+.friends-result-img{
+	border:1px solid #eee; float:left;
+}
+.friends-result-list-1{
+	float:right; width:630px; height:25px; line-height:25px;
+}
+.add-friends-btn,.message-friends-btn,.wait_friends_deal{
+	width:70px; color:#fff; background-color:#1caed0; height:25px; line-height:25px; float:right;
+	text-align:center; cursor:pointer; font-size:12px; margin-right:20px;
+}
+.add-friends-btn:hover,.message-friends-btn:hover{
+	background-color:#ff8800;
+}
+.wait_friends_deal{
+	background-color:#eee; color:#888; cursor:default;
+}
+.message-friends-btn{
+	 background-color:#88c808;
+}
+
+
+.friends-result-page{
+	 float:left; text-align:right; width:700px; margin-left:32px; height:30px; line-height:30px; margin-top:10px;
+	 
+}
+.result-page-top{
+	border-bottom:1px solid #eee; padding-bottom:10px;
+}
+.friends-result-page-a{
+	padding:5px 10px; border:1px solid #ddd; margin-right:5px; cursor:pointer; background-color:#f8f8f8;
+	color:#666; text-decoration:none;
+}
+.friends-result-page-a:hover,.friends-result-page_curr_a{
+	background-color:#1caede; color:#fff; border:1px solid #1caed0;
+}
+
+
+
+.friends-recommend-box{
+	width:100%; margin-top:50px; float:left; font-size:13px;
+}
+.friends-recommend-title{
+	color:#888; font-weight:bold; border-bottom:1px solid #ddd; height:25px; line-height:25px;
+	padding-left:5px;
+}
+

@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2012-10-7 19:30:19 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ecust.model.study.Question" table="questions" abstract="true" polymorphism="implicit">
+        <id name="id">
+            <generator class="increment" />
+        </id>
+        <many-to-one name="course" class="com.ecust.model.zone.Course" column="course" />
+        <many-to-one name="chapter" class="com.ecust.model.study.Chapter" column="chapter" />
+        <property name="difficulty" type="short">
+            <column name="difficulty" />
+        </property>
+        <property name="type">
+            <column name="type" />
+        </property>
+        <property name="sub_type">
+            <column name="sub_type" />
+        </property>
+        <property name="content" type="java.lang.String">
+            <column name="content" />
+        </property>
+        <property name="explanation" type="java.lang.String">
+        	<column name="explanation"/>
+        </property>
+        <property name="date">
+        	<column name="date"/>
+        </property>
+        <property name="right_count">
+        	<column name="right_count"/>
+        </property>
+        <property name="error_count">
+        	<column name="error_count"/>
+        </property>
+        <set name="concept_qs" inverse="true" cascade="all" lazy="false">
+	        <key>
+	        	<column name="question_id" not-null="true"/>
+	        </key>
+	        <one-to-many class="com.ecust.model.study.ConceptQuestion"/>
+        </set>
+        <union-subclass name="com.ecust.model.study.Selection" table="selections">
+        	<list name="options" table="options" lazy="false">
+	            <key>
+	            	<column name="question_id" not-null="true"/>
+	            </key>
+	            <list-index column="list_order"/>
+	            <composite-element class="com.ecust.model.study.Option">
+	            	<parent name="selection"/>
+	            	<property name="label" type="character"/>
+	            	<property name="content" type="java.lang.String"/>
+	            	<property name="weight" type="float"/>
+	            </composite-element>
+       		</list>
+       		<property name="key" type="character" column="selection_key"/>
+        </union-subclass>
+        <union-subclass name="com.ecust.model.study.Fill" table="fills">
+        	<list name="key" table="key_contents"  lazy="false">
+	        	<key>
+	        		<column name="question_id" not-null="true"/>
+	        	</key>
+	        	<list-index column="list_order"/>
+	        	<element type="java.lang.String">
+	        		<column name="key_content"/>
+	        	</element>
+        	</list>
+        </union-subclass>
+        <union-subclass name="com.ecust.model.study.Program" table="programs">
+        	<property name="mainToUser" type="java.lang.String"/>
+        	<property name="mainToTest" type="java.lang.String"/>
+        	<property name="other" type="java.lang.String"/>
+        	<property name="key" type="java.lang.String" column="program_key"/>
+        	<property name="keyToTest" type="java.lang.String"/>
+        </union-subclass>
+    </class>
+</hibernate-mapping>

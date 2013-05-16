@@ -1,0 +1,81 @@
+﻿/*==================================== 
+	 学互网-学习社区
+	 作者：lbz 
+	 日期：2013-1 
+ ====================================*/
+
+/*==================================== 
+	选项卡
+ ====================================*/
+.exam_nav{
+	 height:22px; border-bottom:1px solid #ddd;margin:auto; margin-top:20px;
+	 width:765px; margin-bottom:20px;
+}
+.exam_nav li{
+	width:70px; height:22px; float:left; text-align:center; line-height:22px;
+	 font-size:13px; cursor:pointer; color:#555;
+}
+.exam_li_curr{
+	border-bottom:2px solid #1caede; 
+}
+
+.exam_course_nav{
+	height:50px; width:765px; margin:auto; background-color:#f6f6f6;
+}
+.exam_course_nav li{
+	float:left; text-align:center; line-height:50px; cursor:pointer;
+	color:#888; width:100px;
+}
+.exam_course_nav_curr{
+	
+}
+.exam_course_name{
+	float:left; width:100%; background-color:#f1f1f1;
+}
+.exam_course_pointer{
+	width:20px; height:9px; float:left; background-color:#f1f1f1;
+	margin-left:40px; background:url(../image/course_pointer_bg.png) no-repeat #fff;
+}
+
+
+
+
+/*==================================== 
+	exam
+ ====================================*/
+.exam_box{
+	width:763px; margin:auto;
+}
+.exam{
+	float:left; border:1px solid #f2f2f2; width:100%; margin-top:-9px;
+	margin-left:-1px; border-top:0px;
+}
+.exam_type{
+	margin-top:15px; width:100%; border-bottom:1px solid #f2f2f2;
+	height:40px;
+}
+.exam_type li{
+	float:left; padding:4px; border:1px solid #f2f2f2; margin-left:10px;
+	cursor:pointer; color:#888;
+}
+.exam_type_curr{
+	background-color:#f2f2f2;
+}
+.exam_list_box{
+	margin-bottom:100px;
+}
+.exam_list{
+	width:100%; border-bottom:1px dashed #f2f2f2; height:50px;
+}
+.exam_list:hover{
+	background-color:#f9f9f9;
+}
+.exam_list_title{
+	color:#9bb9c3; font-weight:bold; text-decoration:none; margin-left:20px; line-height:30px;
+}
+.exam_list_title:hover{
+	 text-decoration:underline;
+}
+
+
+
